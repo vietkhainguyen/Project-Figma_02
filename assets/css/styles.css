@@ -153,7 +153,7 @@ a {
 
 .hero__span {
   color: #152427;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 1.67;
@@ -271,4 +271,82 @@ a {
 
 .hero__img:last-child {
   right: 0px;
+}
+
+/* Logo-section */
+
+.logo-section {
+  margin-top: 72px;
+}
+
+.main__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 76px 122px;
+  background: #e2eddf;
+  border-radius: 100px;
+}
+
+.main__logo-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 51px;
+}
+
+.main__logo-google span {
+  color: #143c3c;
+  font-size: 3.1rem;
+  font-weight: 500;
+}
+
+.main__logo-slack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 51px;
+}
+
+.main__logo-slack span {
+  padding-left: 5px;
+  color: #143c3c;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.main__logo-agworld {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 51px;
+}
+
+.main__logo-agworld span {
+  padding-left: 11px;
+  color: #163c35;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.main__logo-riotinto span {
+  font-family: "Sonsie One", system-ui;
+  color: #143c3c;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.main__logo-heroku {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 51px;
+}
+
+.main__logo-heroku span {
+  color: #143c3c;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
 }
