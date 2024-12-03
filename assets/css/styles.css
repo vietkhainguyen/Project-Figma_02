@@ -10,3 +10,265 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --color-primary: #143c3c;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100% -48px);
+}
+
+.btn {
+  --height: 28px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background-color: var(--color-primary);
+  padding: 15px 0px;
+  font-size: 1.8rem;
+  font-family: "Public Sans", serif;
+  font-weight: 500;
+  min-width: 173px;
+  line-height: var(--height);
+  height: var(2 * var(--height));
+  border-radius: 40px;
+  border: 1.5px #143c3c solid;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  font-family: "Public Sans", serif;
+  padding-top: 28px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding-left: 406px;
+  padding-right: 88px;
+}
+
+.navbar__list {
+  display: flex;
+  column-gap: 38px;
+}
+
+.navbar__list::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  top: 97px;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    white 0%,
+    #dddcdc 51%,
+    rgba(212.5, 212.5, 212.5, 0) 100%
+  );
+}
+
+.navbar__link {
+  font-size: 1.6rem;
+  color: #575d5e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.navbar__link.active,
+.navbar__link:hover {
+  color: #152427;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link.active::after {
+  content: "";
+  position: relative;
+  bottom: -25px;
+  left: 2px;
+  width: 16px;
+  height: 2px;
+  display: block;
+  background-color: var(--color-primary);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.hero__content {
+  width: 34%;
+  flex-shrink: 0;
+}
+
+.hero__media {
+  flex-grow: 1;
+  position: relative;
+}
+
+.hero__heading {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-right: 30px;
+  color: #152427;
+}
+
+.hero__desc {
+  margin-top: 20px;
+  color: #575d5e;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+
+.hero__span {
+  color: #152427;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.hero__play-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  color: #fef6fb;
+  cursor: pointer;
+}
+
+.hero__play-icon {
+  display: flex;
+  background: #83a17d;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 43px;
+  transform: rotate(45deg);
+}
+
+.hero__play-icon:hover {
+  background: var(--color-primary);
+}
+
+.hero__play-half-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid;
+  border-color: var(--color-primary) transparent transparent
+    var(--color-primary);
+  border-radius: 50%;
+  width: 57px;
+  height: 59px;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+
+.hero__play-half-circle:hover {
+  transform: rotate(192deg);
+  border-color: transparent #83a17d #83a17d transparent;
+}
+
+.hero__images {
+  display: flex;
+  width: 646px;
+  height: 543px;
+  position: relative;
+  margin-left: 76px;
+  gap: 20px;
+}
+
+.hero__img {
+  position: absolute;
+  width: 202px;
+  height: 466px;
+  border-radius: 110px;
+  object-fit: cover;
+}
+
+.hero__media-bg {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: #4dbb9a;
+  box-shadow: 274px 274px 274px;
+  border-radius: 50%;
+  filter: blur(274px);
+  top: 140px;
+  left: 220px;
+}
+
+.hero__media svg {
+  position: absolute;
+}
+
+.hero__media svg:nth-of-type(1) {
+  top: -17px;
+  left: -125px;
+}
+
+.hero__media svg:nth-of-type(2) {
+  top: -30px;
+  left: -85px;
+}
+
+.hero__media svg:nth-of-type(3) {
+  bottom: -15px;
+  flex-shrink: 0;
+  right: 60px;
+  transform: rotate(180deg);
+}
+
+.hero__media svg:last-child {
+  bottom: -40px;
+  left: 100px;
+}
+
+.hero__img:first-child {
+  top: 0;
+  left: 0;
+}
+
+.hero__img:nth-child(2) {
+  bottom: 0;
+  left: 220px;
+}
+
+.hero__img:last-child {
+  right: 0px;
+}
