@@ -13,6 +13,7 @@ body {
 
 :root {
   --color-primary: #143c3c;
+  --color-secondary: #152427;
 }
 
 /* Common */
@@ -40,12 +41,57 @@ a {
   line-height: var(--height);
   height: var(2 * var(--height));
   border-radius: 40px;
-  border: 1.5px #143c3c solid;
+  border: 1.5px var(--color-primary) solid;
 }
 
 .btn:hover {
   opacity: 0.9;
   cursor: pointer;
+}
+
+.section-heading {
+  color: var(--color-secondary);
+  font-size: 4.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.23;
+}
+
+.arrow-next-icon {
+  transform: rotate(180deg);
+}
+
+.section-intro::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background: var(--color-secondary);
+  width: 25px;
+  height: 1px;
+  bottom: 8px;
+  right: 20px;
+}
+
+.section-heading::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background: var(--color-secondary);
+  width: 66px;
+  height: 2px;
+  left: 9px;
+  bottom: 10px;
+}
+
+.section-intro {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 14px;
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  left: 20px;
 }
 
 /* Header */
@@ -96,7 +142,7 @@ a {
 
 .navbar__link.active,
 .navbar__link:hover {
-  color: #152427;
+  color: var(--color-secondary);
   text-shadow: 1px 0 0 currentColor;
 }
 
@@ -133,7 +179,7 @@ a {
   font-weight: 800;
   line-height: 1.1;
   margin-right: 30px;
-  color: #152427;
+  color: var(--color-secondary);
 }
 
 .hero__desc {
@@ -152,7 +198,7 @@ a {
 }
 
 .hero__span {
-  color: #152427;
+  color: var(--color-secondary);
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -289,6 +335,10 @@ a {
   border-radius: 100px;
 }
 
+.main__logo span:hover {
+  opacity: 0.9;
+}
+
 .main__logo-google {
   display: flex;
   align-items: center;
@@ -297,7 +347,7 @@ a {
 }
 
 .main__logo-google span {
-  color: #143c3c;
+  color: var(--color-primary);
   font-size: 3.1rem;
   font-weight: 500;
 }
@@ -311,7 +361,7 @@ a {
 
 .main__logo-slack span {
   padding-left: 5px;
-  color: #143c3c;
+  color: var(--color-primary);
   font-size: 3.2rem;
   font-weight: 600;
 }
@@ -332,7 +382,7 @@ a {
 
 .main__logo-riotinto span {
   font-family: "Sonsie One", system-ui;
-  color: #143c3c;
+  color: var(--color-primary);
   font-size: 23px;
   font-weight: 400;
 }
@@ -345,8 +395,98 @@ a {
 }
 
 .main__logo-heroku span {
-  color: #143c3c;
+  color: var(--color-primary);
   font-size: 1.9rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
+}
+
+/* Service */
+.service {
+  margin-top: 106px;
+}
+
+.service__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 85px;
+}
+
+.service__top-left {
+  width: 55%;
+}
+
+/* Service top right */
+
+.service__top-right {
+  display: flex;
+  justify-content: center;
+  column-gap: 17px;
+}
+
+.control__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #e2eddf;
+  color: var(--color-secondary);
+  border-radius: 50%;
+  border: 1.5px #e2eddf solid;
+  transition: 0.3s;
+  outline: none;
+}
+
+.control__btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* Service list */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+}
+
+.service-item__thumb {
+  width: 100%;
+  height: 318px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.service-item:hover {
+  background: white;
+  box-shadow: -6px 9px 64px -4px rgba(117.94, 117.94, 117.94, 0.25);
+  border-radius: 20px;
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+
+.service-item__body {
+  margin-top: 24px;
+  width: 268px;
+  margin-bottom: 23px;
+  margin-left: 18px;
+}
+
+.service-item__heading {
+  color: #152427;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.service-item__desc {
+  margin-top: 18px;
+  color: #7d8188;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7;
 }
