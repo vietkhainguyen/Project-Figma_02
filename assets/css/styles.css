@@ -94,6 +94,13 @@ a {
   left: 20px;
 }
 
+.section-desc {
+  color: #7d8188;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
 /* Header */
 .header {
   font-family: "Public Sans", serif;
@@ -477,7 +484,7 @@ a {
 }
 
 .service-item__heading {
-  color: #152427;
+  color: var(--color-secondary);
   font-size: 2.2rem;
   font-weight: 600;
   line-height: 1;
@@ -485,8 +492,244 @@ a {
 
 .service-item__desc {
   margin-top: 18px;
-  color: #7d8188;
+}
+
+/* About */
+.about {
+  margin-top: 157px;
+}
+
+.about .body {
+  display: flex;
+}
+
+.about__media {
+  position: relative;
+  width: 55%;
+}
+
+.about__content {
+  width: 45%;
+  padding-left: 30px;
+}
+
+.about__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 21px;
+}
+
+.about__img {
+  position: absolute;
+  width: 286px;
+  height: 480px;
+  box-shadow: 0px 4px 234px 11px rgba(58.82, 137.06, 71.34, 0.25);
+  border-radius: 210px;
+  object-fit: cover;
+}
+
+.about__img:first-child {
+  left: 2px;
+  top: 70px;
+}
+
+.about__img:last-child {
+  top: -10px;
+  right: 50px;
+}
+
+.about__media svg {
+  position: absolute;
+}
+
+.about__media svg:nth-of-type(1) {
+  top: -5px;
+  left: 55px;
+}
+
+.about__media svg:nth-of-type(2) {
+  top: -10px;
+  left: 100px;
+}
+
+.about__media-bg {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #4dbb9a;
+  box-shadow: 274px 274px 274px;
+  border-radius: 50%;
+  filter: blur(274px);
+  top: 140px;
+  left: 220px;
+}
+
+/* About Desingers */
+.about__designers {
+  font-family: "Public Sans", serif;
+  position: absolute;
+  width: 143px;
+  height: 144px;
+  background: white;
+  box-shadow: 0px 7px 54px rgba(154.06, 154.06, 154.06, 0.25);
+  border-radius: 8px;
+  top: 400px;
+  left: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__designers-heading {
+  margin: 19px auto 0;
+  color: var(--color-secondary);
   font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.about__designers-total {
+  margin-top: 6px;
+  margin-left: 22px;
+  color: #575d5e;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.about__designers-percent {
+  margin-top: 10px;
+  margin-left: 22px;
+  color: var(--color-secondary);
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 1.7;
+  line-height: 1.4;
+}
+
+.about__designers-percent::after {
+  position: absolute;
+  content: "";
+  width: 96px;
+  height: 2px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #83a17d 40%, #eaeaea 40%);
+  bottom: 60px;
+  right: 25px;
+}
+
+.about__designers-loading {
+  margin-top: 10px;
+  margin-left: 80px;
+  color: var(--color-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about__designers-outline-circle {
+  margin-left: 20px;
+  width: 11px;
+  height: 11px;
+  background: #eaeaea;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 100px;
+  right: 110px;
+}
+
+.about__designers-inner-circle {
+  width: 5px;
+  height: 5px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.about__designers-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__designers-row-teams {
+  color: #152427;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 5px;
+  margin-left: 18px;
+}
+
+.about__designers-row-members {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 17px;
+}
+
+.about__desginers-avatar {
+  width: 16px;
+  height: 16px;
+  border: 1px white solid;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: -4px;
+}
+
+/* About content */
+
+.about__content-heading {
+  color: #152427;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.24;
+}
+
+.about__desc {
+  color: #7d8188;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.625;
+  margin-top: 11px;
+}
+
+.abount__percent {
+  margin-top: 36px;
+}
+
+.about__percent-big,
+.about__percent-small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__number {
+  color: #152427;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.24;
+}
+
+.about__percent-desc {
+  margin-left: 24px;
+}
+
+.about__percent-desc::after {
+  content: "";
+  width: 485px;
+  height: 1px;
+  background: #83a17d;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  right: 105px;
+}
+
+.about__percent-small {
+  margin-top: 58px;
 }
