@@ -656,7 +656,7 @@ a {
 }
 
 .about__designers-row-teams {
-  color: #152427;
+  color: var(--color-secondary);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.4;
@@ -683,7 +683,7 @@ a {
 /* About content */
 
 .about__content-heading {
-  color: #152427;
+  color: var(--color-secondary);
   font-size: 4.2rem;
   font-weight: 600;
   line-height: 1.24;
@@ -709,7 +709,7 @@ a {
 }
 
 .about__number {
-  color: #152427;
+  color: var(--color-secondary);
   font-size: 4.2rem;
   font-weight: 600;
   line-height: 1.24;
@@ -732,4 +732,103 @@ a {
 
 .about__percent-small {
   margin-top: 58px;
+}
+
+/* Process */
+.process {
+  margin-top: 179px;
+}
+
+.process__top {
+  width: 477px;
+  padding-top: 35px;
+}
+
+.process__list {
+  margin-top: 81px;
+}
+
+.process-item__image {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 92px;
+  transition: 0.75s;
+  object-fit: cover;
+}
+
+.process-item {
+  padding: 55px 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: ease-in 0.3s;
+}
+
+.process-item::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 21px;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(180deg, #83a17d 4%, rgba(131, 161, 125, 0) 36%);
+}
+
+.process-item:hover {
+  background: #e2eddf;
+  border-radius: 33px;
+}
+
+.process-item:hover::after {
+  display: none;
+}
+
+.process-item__number {
+  color: var(--color-primary);
+  font-size: 7.2rem;
+  font-weight: 600;
+  line-height: 0.72;
+}
+
+.process-item__body {
+  margin-left: 50px;
+}
+
+.process__list-heading {
+  color: var(--color-secondary);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.process-item__learn {
+  display: none;
+  margin-top: 22px;
+  color: #575d5e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: underline var(--color-secondary);
+  transition: 0.5s;
+}
+
+.process-item__desc {
+  width: 572px;
+  color: #7d8188;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55;
+  margin-left: auto;
+}
+
+.process-item:hover .process-item__learn,
+.process-item:hover .process-item__image {
+  display: block;
+}
+
+.process-item:hover .process-item__desc {
+  display: none;
 }
