@@ -992,6 +992,7 @@ a {
   transition: 0.4s;
   cursor: pointer;
   border: 1.5px #cecece solid;
+  transition: 0.3s;
 }
 
 .service-features__item:hover {
