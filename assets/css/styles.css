@@ -191,7 +191,6 @@ a {
 
 /* Hero */
 .hero {
-  min-height: 100vh;
   padding: 60px 0 0;
 }
 
@@ -333,8 +332,7 @@ a {
 
 .hero__media svg:nth-of-type(3) {
   bottom: -15px;
-  flex-shrink: 0;
-  right: 60px;
+  right: 10px;
   transform: rotate(180deg);
 }
 
@@ -359,9 +357,9 @@ a {
 
 /* Logo-section */
 
-/* .logo-section {
-  margin-top: 72px;
-} */
+.logo-section {
+  padding-top: 92px;
+}
 
 .main__logo {
   display: flex;
